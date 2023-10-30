@@ -27,8 +27,8 @@ async function processData(page, tipo, data) {
           const { name, status, image, gender, origin, species, img } = ch;
           createCard( name, status, image, gender, origin, species, img );
           offLoading();
-  buttonNext.disabled = false;
-  buttonPrev.disabled = false;
+          buttonNext.disabled = false;
+          buttonPrev.disabled = false;
 
     
       });
@@ -61,6 +61,8 @@ async function processData(page, tipo, data) {
 activarButton(1)
  
 var dataValue = '';
+
+
 document.getElementById('form').addEventListener('submit', async (e) => {
   e.preventDefault();
   const data = Object.fromEntries(new FormData(e.target));
@@ -192,7 +194,7 @@ function createdCardChapter( id, name, episode, air_date ){
 
   const {s,e} = convertEpisode(episode);
   const columnaChapter = document.createElement('div');
-  columnaChapter.className = 'col col-sm-12 col-md-6 col-lg-6   col-xl-4 col-xxl-3    mb-3';
+  columnaChapter.className = 'col-12 col-sm-12 col-md-6 col-lg-6   col-xl-4 col-xxl-3    mb-3';
 
   const card = document.createElement('div');
   card.className = 'card  bg-dark    rounded  mb-2 mt-2  border-top-white w-100 border-top  cardStyle';
