@@ -241,7 +241,7 @@ function createCard ( name, status, image, gender, origin, species, img ){
 
   ( gender === 'Male' )? gender = 'Masculino':gender = 'Femenino';
   const columna = document.createElement('div');
-  columna.className = 'col-12 col-sm-12 col-md-5 col-lg-5   col-xl-3 col-xxl-3  col-custom mb-3 mt-2  me-3  cardStyle bg-dark border-top  border-white  border-bottom container-fluid ';
+  columna.className = 'col-12 col-sm-12 col-md-5 col-lg-5   col-xl-3 col-xxl-3  col-custom   cardStyle bg-dark border-top  border-white  border-bottom container-fluid ';
 
   const card = document.createElement('div');
   card.className = 'card  bg-dark  rounded  m-auto  p-4   ';

@@ -20,8 +20,8 @@
 </head>
 
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body class="">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top ">
         <div class="container-fluid ">
             <a href="">
                 <img src="assets/favicon-32x32.png" class="border rounded-circle" alt="" id="img-nav">
@@ -30,23 +30,17 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse"  id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5 d-flex justify-content-between">
+      <div class="collapse navbar-collapse nav-custom"  id="navbarSupportedContent">
+        <ul class="navbar-nav  d-flex justify-content-between">
             <li class="nav-item m-1">
                 <button class="nav-link custom-transparent-button fs-5 " id="pg1" >Personajes</button>
               </li>
           <li class="nav-item m-1">
             <button class="nav-link custom-transparent-button fs-5" id="pg2" >Capitulos</button>
           </li>
-          <li class="nav-item m-1">
-            <button class="nav-link custom-transparent-button fs-5" id="pg3" ></button>
-          </li>
         
         </ul>
-        <form class="d-flex" id="form">
-            <input class="form-control me-2" name="name" type="search" placeholder="Filtrar personaje" aria-label="Search" id="input-form" value="">
-            <button class="btn btn-outline-success" type="submit"  id="searchNutton" >Buscar</button>
-          </form>
+     
       </div>
         </div>
     </nav>
@@ -56,15 +50,22 @@
           <h1 class="text-center"> Rick and Morty</h1>
         </div>
       </header>
+      <div class="m-3 px-5 ">
+        <button class="nav-link custom-transparent-button fs-5" id="pg3" ></button>
+
+        <form class="d-flex" id="form">
+            <input class="form-control me-2 bg-dark-opacity text-white" name="name" type="search" placeholder="Filtrar personaje" aria-label="Search" id="input-form" value="">
+            <button class="btn btn-outline-success" type="submit"  id="searchNutton" >Buscar</button>
+          </form>
+      </div>
     <div class="container-fluid ">
         <div id="loading" class="text-white text-center p-5 m-5">...CARGANDO</div>
-        <div class="color-custome row mb-5 container-fluid justify-content-center center " id="cards">
+        <div class="color-custome d-flex mx-3 flex-wrap mb-5  justify-content-center mb-5 pb-4  gap-3" id="cards">
             
         </div>
     </div>
 
     <footer class="row justify-content-center">
-        <div class="col-12 col-md-4 ">
             <div class="d-flex flex-row align-items-center justify-content-center  ">
                 <button 
                     class="btn btn-dark border-success rounded me-3 p-2" 
@@ -89,7 +90,6 @@
                  
             </div>
             
-        </div>
     </footer>
   
 </body>
